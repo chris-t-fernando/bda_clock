@@ -1,20 +1,16 @@
 from typing import List
 
-# from datetime
-import datetime
-
 from pydantic import BaseModel
 
 
 class NewClock(BaseModel):
     interval: int
-    start: datetime.datetime
+    start: str
     id: str
-    tz: str
 
 
 class Clock(NewClock):
-    now: datetime.datetime
+    now: str
 
 
 class Clocks(BaseModel):
