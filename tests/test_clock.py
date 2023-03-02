@@ -2,7 +2,7 @@ import requests
 from datetime import date, datetime
 
 urlbase = "http://127.0.0.1:8000/clock/"
-test_clock = "clock1"
+test_clock = "clock1/"
 
 
 def make():
